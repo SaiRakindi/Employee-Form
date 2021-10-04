@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container form-container">
+        <h1 class="form-heading">Add Employee</h1>
+        <form id="myForm">
+            <div class="mb-3">
+                <label for="name" class="input-label">Name</label>
+                <input type="text" class="form-control input-field" id="name" />
+                <p id="nameErrMsg" class="error-message"></p>
+            </div>
+            <div class="mb-3">
+                <label for="gender" class="input-label">Gender</label><br />
+                <input type="radio" name="gender" id="genderMale" value="Male" checked />
+                <label for="genderMale">Male</label>
+                <input type="radio" name="gender" id="genderFemale" value="Female" class="ml-2" />
+                <label for="genderFemale">Female</label>
+            </div>
+            <div class="mb-3">
+                <label for="dob" class="input-label">Date of Birth</label>
+                <input type="date" class="form-control input-field" id="dob" />
+                <p id="dobErrMsg" class="error-message"></p>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="input-label">Email</label>
+                <input type="text" class="form-control input-field" id="email" />
+                <p id="emailErrMsg" class="error-message"></p>
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="input-label">Phone</label>
+                <input type="text" class="form-control input-field" id="phone" />
+                <p id="phoneErrMsg" class="error-message"></p>
+            </div>
+            <div class="mb-3">
+                <p class="input-label">Hobbies</p>
+
+                <input type="checkbox" id="cricket" />
+                <label for="cricket" class="mr-3">Cricket</label>
+
+                <input type="checkbox" id="chess" />
+                <label for="chess" class="mr-3">Chess</label>
+
+                <input type="checkbox" id="music" />
+                <label for="music" class="mr-3">Music</label>
+            </div>
+            <button class="btn btn-primary mb-5">Submit</button>
+        </form>
+        <h4 class="details-heading">Employee Details</h4>
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>DOB</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Hobbies</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>Male</td>
+                    <td>01/02/1988</td>
+                    <td>john@example.com</td>
+                    <td>9898767514</td>
+                    <td>Cricket</td>
+                </tr>
+                <tr>
+                    <td>Mary</td>
+                    <td>Female</td>
+                    <td>01/06/1988</td>
+                    <td>mary@example.com</td>
+                    <td>9977541236</td>
+                    <td>Cricket, Chess</td>
+                </tr>
+                <tr>
+                    <td>July</td>
+                    <td>Female</td>
+                    <td>17/12/1991</td>
+                    <td>july@example.com</td>
+                    <td>9898898954</td>
+                    <td>Cricket, Chess, Music</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </div>
+</body>
+
+</html>
